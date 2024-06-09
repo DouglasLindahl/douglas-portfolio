@@ -2,9 +2,10 @@
 import { useRef, useState } from 'react'
 
 export default function Home() {
-  const aboutSectionRef = useRef(null)
-  const showcaseSectionRef = useRef(null)
-  const contactSectionRef = useRef(null)
+  type SectionRef = React.RefObject<HTMLDivElement>
+  const aboutSectionRef: SectionRef = useRef<HTMLDivElement>(null)
+  const showcaseSectionRef: SectionRef = useRef<HTMLDivElement>(null)
+  const contactSectionRef: SectionRef = useRef<HTMLDivElement>(null)
 
   const projects = [
     {
