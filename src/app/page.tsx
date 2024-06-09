@@ -1,5 +1,5 @@
 'use client'
-import { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 
 export default function Home() {
   type SectionRef = React.RefObject<HTMLDivElement>
@@ -10,17 +10,17 @@ export default function Home() {
   const projects = [
     {
       title: 'Timeframe',
-      link: 'time-frame.vercel.app',
+      link: 'https://time-frame.vercel.app',
     },
     {
       title: 'Uppsikt',
-      link: 'uppsikt.se',
+      link: 'https://uppsikt.se',
     },
   ]
   const contacts = [
     {
       title: 'Linkedin',
-      link: 'linkedin.com/in/douglaslindahl',
+      link: 'https://linkedin.com/in/douglaslindahl',
     },
   ]
 
@@ -89,7 +89,7 @@ export default function Home() {
           solutions. I want to help build the future with my skills in
           webdevelopment
         </p>
-        <p className="text-2xl font-bold">Let's do it.</p>
+        <p className="text-2xl font-bold">{"Let's do it."}</p>
         <button
           onClick={scrollToShowcase}
           className="absolute left-1/2 transform -translate-x-1/2 bottom-20 border-2 border-primary-color w-20 h-20 rounded-full opacity-75"
@@ -105,15 +105,16 @@ export default function Home() {
         <h3 className="text-6xl md:text-8xl font-extrabold w-10/12 mx-auto pt-16 pb-8">
           Work Showcase
         </h3>
-
         <div className="flex flex-col w-full justify-center items-center gap-4">
           {projects.map((project, index) => (
             <a
+              key={index}
               className="w-full flex justify-center items-center"
               href={`https://${project.link}/`}
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <p className=" w-4/6 px-16 py-4 rounded-full border-2 border-primary-color">
+              <p className="w-4/6 px-16 py-4 rounded-full border-2 border-primary-color">
                 {project.title + ' '}&#8250;
               </p>
             </a>
@@ -142,11 +143,13 @@ export default function Home() {
         <div className="flex flex-col w-full justify-center items-center gap-4 pt-4">
           {contacts.map((contact, index) => (
             <a
-              className="w-full flex justify-center items-center "
+              key={index}
+              className="w-full flex justify-center items-center"
               href={`https://${contact.link}/`}
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <p className=" w-4/6 px-16 py-4 rounded-full border-2 border-primary-color">
+              <p className="w-4/6 px-16 py-4 rounded-full border-2 border-primary-color">
                 {contact.title + ' '}&#8250;
               </p>
             </a>
