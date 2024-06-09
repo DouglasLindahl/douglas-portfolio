@@ -58,15 +58,17 @@ export default function Home() {
         </p>
         <button
           onClick={scrollToShowcase}
-          className="px-16 py-4 rounded-full text-2xl opacity-75 mt-8 border-2 border-secondary-color text-secondary-color"
+          className="px-16 py-4 rounded-full text-2xl mt-8 border-2 border-secondary-color "
         >
-          Work Showcase
+          Work Showcase &rsaquo;&rsaquo;
         </button>
         <button
           onClick={scrollToAbout}
-          className="absolute left-1/2 transform -translate-x-1/2 bottom-20 border-2 border-primary-color w-20 h-20 rounded-full opacity-75"
+          className="absolute left-1/2 transform -translate-x-1/2 bottom-20 border-2 border-primary-color w-20 h-20 rounded-full text-5xl flex flex-row justify-center items-center rotate-90"
         >
-          &#8595;
+          <span className="text-center align-middle leading-none h-[52px]">
+            &rsaquo;&rsaquo;
+          </span>
         </button>
       </section>
       <section
@@ -92,9 +94,11 @@ export default function Home() {
         <p className="text-2xl font-bold">{"Let's do it."}</p>
         <button
           onClick={scrollToShowcase}
-          className="absolute left-1/2 transform -translate-x-1/2 bottom-20 border-2 border-primary-color w-20 h-20 rounded-full opacity-75"
+          className="absolute left-1/2 transform -translate-x-1/2 bottom-20 border-2 border-primary-color w-20 h-20 rounded-full text-5xl flex flex-row justify-center items-center rotate-90"
         >
-          &#8595;
+          <span className="text-center align-middle leading-none h-[52px]">
+            &rsaquo;&rsaquo;
+          </span>
         </button>
       </section>
       <section
@@ -115,16 +119,18 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <p className="w-4/6 px-16 py-4 rounded-full border-2 border-primary-color">
-                {project.title + ' '}&#8250;
+                {project.title + ' '}&rsaquo;&rsaquo;
               </p>
             </a>
           ))}
         </div>
         <button
           onClick={scrollToContact}
-          className="absolute left-1/2 transform -translate-x-1/2 bottom-20 border-2 border-primary-color w-20 h-20 rounded-full opacity-75"
+          className="absolute left-1/2 transform -translate-x-1/2 bottom-20 border-2 border-primary-color w-20 h-20 rounded-full text-5xl flex flex-row justify-center items-center rotate-90"
         >
-          &#8595;
+          <span className="text-center align-middle leading-none h-[52px]">
+            &rsaquo;&rsaquo;
+          </span>
         </button>
       </section>
       <section
@@ -150,7 +156,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <p className="w-4/6 px-16 py-4 rounded-full border-2 border-primary-color">
-                {contact.title + ' '}&#8250;
+                {contact.title + ' '}&rsaquo;&rsaquo;
               </p>
             </a>
           ))}
