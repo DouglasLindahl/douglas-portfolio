@@ -58,7 +58,7 @@ export default function Home() {
         </p>
         <button
           onClick={scrollToShowcase}
-          className="px-16 py-4 rounded-full text-2xl mt-8 border-2 border-secondary-color "
+          className="px-16 py-4 rounded-full text-2xl mt-8 border-2 border-zinc-500 bg-zinc-800"
         >
           Work Showcase &rsaquo;&rsaquo;
         </button>
