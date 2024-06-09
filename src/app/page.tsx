@@ -9,14 +9,10 @@ export default function Home() {
 
   const projects = [
     {
-      src: 'timeframe.png',
-      alt: 'image of timeframe website',
       title: 'Timeframe',
       link: 'time-frame.vercel.app',
     },
     {
-      src: 'uppsikt.png',
-      alt: 'image of uppsikt website',
       title: 'Uppsikt',
       link: 'uppsikt.se',
     },
