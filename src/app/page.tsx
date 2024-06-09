@@ -10,11 +10,11 @@ export default function Home() {
   const projects = [
     {
       title: 'Timeframe',
-      link: 'https://time-frame.vercel.app',
+      link: 'time-frame.vercel.app',
     },
     {
       title: 'Uppsikt',
-      link: 'https://uppsikt.se',
+      link: 'uppsikt.se',
     },
   ]
   const contacts = [
@@ -81,10 +81,10 @@ export default function Home() {
           EXPERIENCE
         </h3>
         <p className="text-xl md:text-2xl w-10/12 md:w-8/12">
-          I am a creative full-stack developer who has been programming for for
-          6+ years. I received my high school diploma in game development in
-          2021 and professional higher education diploma in webdevelopment in
-          2024, all the while creating multiple websites for different purposes.
+          I am a creative full-stack developer who has been programming for 6+
+          years. I received my high school diploma in game development in 2021
+          and professional higher education diploma in web development in 2024,
+          all the while creating multiple websites for different purposes.
         </p>
         <p className="text-xl md:text-2xl w-10/12 md:w-8/12">
           I have always had a passion for creating and building web-based
