@@ -19,8 +19,8 @@ export default function Home() {
   ]
   const contacts = [
     {
-      title: 'Linkedin',
-      link: 'https://linkedin.com/in/douglaslindahl',
+      title: 'LinkedIn',
+      link: 'linkedin.com/in/douglaslindahl',
     },
   ]
 
