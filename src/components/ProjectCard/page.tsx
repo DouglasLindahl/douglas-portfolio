@@ -61,7 +61,6 @@ const ImageWrapper = styled.div`
   width: 200px;
   height: 200px;
   overflow: hidden;
-  border-radius: 100px;
   @media (max-width: 700px) {
     width: 100%;
     height: auto;
