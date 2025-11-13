@@ -19,7 +19,15 @@ export function Projects() {
       description:
         "A swedish home-services company offering comprehensive indoor and outdoor maintenance, grounding itself in reliability and year-round support.",
       image: "uppsikt-hero.jpeg",
-      tags: ["React", "NextJS", "Javascript"],
+      tags: [
+        "React",
+        "NextJS",
+        "Javascript",
+        "Mobile access",
+        "Responsive Design",
+        "SEO",
+        "Styled Components",
+      ],
       github: "https://github.com",
       demo: "https://uppsikt.se",
     },
@@ -28,7 +36,15 @@ export function Projects() {
       description:
         "A locally–based taxi and light haulage service in Kungshamn sweden offering safe, reliable rides, fixed pricing and year-round availability — including transport of small freight, boats, and oversized items.",
       image: "taxibilen-hero.webp",
-      tags: ["React Native", "Firebase", "Redux", "Express"],
+      tags: [
+        "React",
+        "NextJS",
+        "Javascript",
+        "Mobile access",
+        "Responsive Design",
+        "SEO",
+        "Styled Components",
+      ],
       github: "https://github.com",
       demo: "https://taxibilen.se",
     },
@@ -36,26 +52,20 @@ export function Projects() {
       title: "NexaQR",
       description:
         "A smart QR-code platform to store and access contacts safely from any device. Generate QR codes for wristbands, keychains or cards — giving you emergency access wherever you are.",
-      image: "taxibilen-hero.webp",
+      image: "nexaqr-logo.png",
       tags: [
+        "React",
+        "NextJS",
+        "Typescript",
+        "APIs",
+        "NodeJS",
         "QR codes",
-        "Contact storage",
         "Mobile access",
-        "Digital ID",
-        "Cross-device",
+        "Supabase",
+        "Resend",
       ],
       github: "https://github.com",
       demo: "https://nexaQR.com",
-    },
-    {
-      title: "Developer Tools Suite",
-      description:
-        "A collection of productivity tools for developers including API testing, code snippet manager, and Git workflow automation.",
-      image:
-        "https://images.unsplash.com/photo-1707528041466-83a325f01a3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYyOTE2NjQ3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Electron", "React", "TypeScript", "SQLite"],
-      github: "https://github.com",
-      demo: "https://example.com",
     },
   ];
 
@@ -112,17 +122,6 @@ export function Projects() {
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    <Button variant="outline" size="sm" asChild>
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2"
-                      >
-                        <Github size={16} />
-                        Code
-                      </a>
-                    </Button>
                     <Button size="sm" asChild>
                       <a
                         href={project.demo}

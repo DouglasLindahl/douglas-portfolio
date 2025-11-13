@@ -44,7 +44,7 @@ export function Footer() {
               <Twitter size={24} />
             </a>
             <a
-              href="mailto:alex.johnson@example.com"
+              href="mailto:douglas.lindahl@gmail.com"
               className="hover:text-gray-300 transition-colors"
               aria-label="Email"
             >
@@ -54,7 +54,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-          <p>© {currentYear} Alex Johnson. All rights reserved.</p>
+          <p>© {currentYear} Douglas Lindahl. All rights reserved.</p>
         </div>
       </div>
     </footer>

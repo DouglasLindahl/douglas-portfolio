@@ -33,19 +33,19 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "alex.johnson@example.com",
-      href: "mailto:alex.johnson@example.com",
+      value: "douglas.lindahl@gmail.com",
+      href: "mailto:douglas.lindahl@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+1 (618) 666 2606",
+      href: "tel:+16186662606",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "St. Louis, IL",
       href: null,
     },
   ];
@@ -93,7 +93,9 @@ export function Contact() {
                         {info.value}
                       </a>
                     ) : (
-                      <p>{info.value}</p>
+                      <p className="hover:underline text-gray-600">
+                        {info.value}
+                      </p>
                     )}
                   </div>
                 </div>
@@ -105,7 +107,7 @@ export function Contact() {
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-green-500">✓</span>
-                  <span>5+ years of professional experience</span>
+                  <span>3+ years of professional experience</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-500">✓</span>
