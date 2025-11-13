@@ -30,7 +30,7 @@ export function Hero() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-gray-600 mb-4">Hi, my name is</p>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-4">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-4 text-sky-500">
               Douglas Lindahl
             </h1>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-600 mb-6">
@@ -49,7 +49,11 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-wrap items-center justify-center gap-4 mb-12"
           >
-            <Button size="lg" onClick={scrollToProjects}>
+            <Button
+              size="lg"
+              className="text-sky-500 border-2 border-sky-500"
+              onClick={scrollToProjects}
+            >
               View My Work
             </Button>
             <Button size="lg" variant="outline" onClick={scrollToContact}>

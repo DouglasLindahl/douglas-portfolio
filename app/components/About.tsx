@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "motion/react";
-import { Code2, Database, Cloud, Laptop } from "lucide-react";
+import { Code2, Database, Cloud, Laptop, Smartphone } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function About() {
@@ -18,10 +18,10 @@ export function About() {
         "Creating scalable APIs and services with Node.js, Express, and various databases.",
     },
     {
-      icon: Cloud,
-      title: "Cloud & DevOps",
+      icon: Smartphone,
+      title: "Responsive Web Apps",
       description:
-        "Deploying and managing applications on AWS, GCP, and implementing CI/CD pipelines.",
+        "Building mobile-friendly layouts that look great on every device.",
     },
     {
       icon: Laptop,
@@ -40,7 +40,9 @@ export function About() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl sm:text-5xl text-center mb-4">About Me</h2>
+          <h2 className="text-4xl sm:text-5xl text-center mb-4 text-sky-500">
+            About Me
+          </h2>
           <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
             I'm a passionate fullstack developer with 3+ years of experience
             building web applications that make a difference. I love turning
@@ -59,7 +61,7 @@ export function About() {
               className="p-6 border rounded-lg hover:shadow-lg transition-shadow"
             >
               <highlight.icon className="w-12 h-12 mb-4 text-gray-900" />
-              <h3 className="text-xl mb-2">{highlight.title}</h3>
+              <h3 className="text-xl mb-2 text-[#FF6B5A]">{highlight.title}</h3>
               <p className="text-gray-600">{highlight.description}</p>
             </motion.div>
           ))}
@@ -72,7 +74,7 @@ export function About() {
           viewport={{ once: true }}
           className="mt-16 p-8 bg-gray-50 rounded-lg"
         >
-          <h3 className="text-2xl mb-4">My Journey</h3>
+          <h3 className="text-2xl mb-4 text-sky-500">My Journey</h3>
           <p className="text-gray-700 mb-4">
             My journey into software development started with a curiosity about
             how things work. What began as tinkering with HTML and CSS evolved
@@ -80,11 +82,9 @@ export function About() {
             thousands of users.
           </p>
           <p className="text-gray-700">
-            I specialize in the JavaScript ecosystem, with expertise in React,
-            Node.js, and TypeScript. I'm constantly learning new technologies
-            and best practices to stay at the forefront of web development. When
-            I'm not coding, you'll find me contributing to open-source projects
-            or writing technical blog posts.
+            I build modern web apps with React, Node.js, and TypeScript. I’m
+            always learning, improving my workflow, and staying up to date with
+            the latest in web development.
           </p>
         </motion.div>
       </div>

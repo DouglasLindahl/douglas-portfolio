@@ -13,7 +13,6 @@ export function Skills() {
       "Tailwind CSS",
       "HTML5",
       "CSS3",
-      "Redux",
       "Vue.js",
       "Webpack",
       "Vite",
@@ -21,15 +20,10 @@ export function Skills() {
     backend: [
       "Node.js",
       "Express",
-      "Python",
-      "Django",
-      "FastAPI",
       "GraphQL",
       "REST APIs",
       "PostgreSQL",
       "MongoDB",
-      "Redis",
-      "Prisma",
     ],
     devops: [
       "AWS",
@@ -66,7 +60,9 @@ export function Skills() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl mb-4">Skills & Technologies</h2>
+          <h2 className="text-4xl sm:text-5xl mb-4 text-sky-500">
+            Skills & Technologies
+          </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             A comprehensive toolkit for building modern web applications
           </p>
@@ -79,15 +75,14 @@ export function Skills() {
           viewport={{ once: true }}
         >
           <Tabs defaultValue="frontend" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8">
+            <TabsList className="flex w-full flex-wrap lg:flex-nowrap gap-2 mb-8">
               <TabsTrigger value="frontend">Frontend</TabsTrigger>
               <TabsTrigger value="backend">Backend</TabsTrigger>
-              <TabsTrigger value="devops">DevOps & Cloud</TabsTrigger>
               <TabsTrigger value="tools">Tools</TabsTrigger>
             </TabsList>
 
             <TabsContent value="frontend" className="mt-0">
-              <div className="flex flex-wrap gap-3 p-6 bg-white rounded-lg border">
+              <div className="flex flex-wrap justify-between gap-3 p-6 bg-white rounded-lg border">
                 {skillCategories.frontend.map((skill, index) => (
                   <motion.div
                     key={skill}
@@ -104,7 +99,7 @@ export function Skills() {
             </TabsContent>
 
             <TabsContent value="backend" className="mt-0">
-              <div className="flex flex-wrap gap-3 p-6 bg-white rounded-lg border">
+              <div className="flex flex-wrap justify-between gap-3 p-6 bg-white rounded-lg border">
                 {skillCategories.backend.map((skill, index) => (
                   <motion.div
                     key={skill}
@@ -121,7 +116,7 @@ export function Skills() {
             </TabsContent>
 
             <TabsContent value="devops" className="mt-0">
-              <div className="flex flex-wrap gap-3 p-6 bg-white rounded-lg border">
+              <div className="flex flex-wrap justify-between gap-3 p-6 bg-white rounded-lg border">
                 {skillCategories.devops.map((skill, index) => (
                   <motion.div
                     key={skill}
@@ -138,7 +133,7 @@ export function Skills() {
             </TabsContent>
 
             <TabsContent value="tools" className="mt-0">
-              <div className="flex flex-wrap gap-3 p-6 bg-white rounded-lg border">
+              <div className="flex flex-wrap justify-between gap-3 p-6 bg-white rounded-lg border">
                 {skillCategories.tools.map((skill, index) => (
                   <motion.div
                     key={skill}

@@ -36,7 +36,7 @@ export function Navbar() {
             className="cursor-pointer"
             onClick={() => scrollToSection("hero")}
           >
-            <span className="text-2xl">{"<Dev />"}</span>
+            <span className="text-2xl text-sky-500">{"<Dev />"}</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -59,7 +59,12 @@ export function Navbar() {
             >
               Projects
             </button>
-            <Button onClick={() => scrollToSection("contact")}>Contact</Button>
+            <Button
+              className="text-gray-700 hover:text-gray-900 transition-colors"
+              onClick={() => scrollToSection("contact")}
+            >
+              Contact
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
